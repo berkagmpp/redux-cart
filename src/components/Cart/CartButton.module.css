@@ -10,12 +10,13 @@
 }
 
 .button span {
-  margin: 0 0.5rem;
+  margin: 0 0.3rem;
+  font-weight: bold;
 }
 
 .badge {
   background-color: #1ad1b9;
   border-radius: 30px;
-  padding: 0.15rem 1.25rem;
+  padding: 0.15rem 1rem;
   color: #1d1d1d;
 }
