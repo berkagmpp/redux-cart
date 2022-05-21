@@ -7,7 +7,6 @@ import Products from './components/Shop/Products';
 function App() {
     const showCart = useSelector(state => state.ui.cartIsVisible);
 
-
     return (
         <Layout>
             {showCart && <Cart />}

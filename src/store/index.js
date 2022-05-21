@@ -6,7 +6,7 @@ import cartReducer from './cart-slice';
 const store = configureStore({
     reducer: { 
         ui: uiReducer,
-        // cart: cartReducer
+        cart: cartReducer
     }
 });
 
