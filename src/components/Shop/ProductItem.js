@@ -17,7 +17,7 @@ const ProductItem = (props) => {
 
         const updatedItems = cart.items.slice(); // create copy via slice to avoid mutating original state
         const existingItem = updatedItems.find((item) => item.id === id);
-        
+
         if (existingItem) {
           const updatedItem = { ...existingItem }; // new object + copy existing properties to avoid state mutation
           updatedItem.quantity++;
@@ -32,7 +32,7 @@ const ProductItem = (props) => {
             price: price,
             quantity: 1,
             totalPrice: price,
-            name: title,
+            title: title,
           });
         }
     
@@ -42,6 +42,9 @@ const ProductItem = (props) => {
         };
     
         dispatch(cartActions.replaceCart(newCart));
+
+         // and then send Http request
+        // fetch('firebase-url', { method: 'POST', body: JSON.stringify(newCart) })
 
         // dispatch(cartActions.addItemToCart({
         //     id,
