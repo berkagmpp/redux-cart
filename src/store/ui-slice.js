@@ -9,9 +9,9 @@ const uiSlice = createSlice({
         },
         showNotification(state, action) {
             state.notification = {
-                status: state.action.status,    // status like pending, error, success...
-                title: state.action.title,
-                message: state.action.message,
+                status: action.payload.status,    // status like pending, error, success...
+                title: action.payload.title,
+                message: action.payload.message,
             };
         }
     }
