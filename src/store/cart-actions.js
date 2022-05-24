@@ -42,7 +42,10 @@ export const sendCartData = cart => {
                 'https://react-book-cart-cc9ce-default-rtdb.firebaseio.com/cart.json',
                 {
                     method: 'PUT',
-                    body: JSON.stringify(cart)
+                    body: JSON.stringify({      // new obj which does NOT contain 'changed'
+                        items: cart.items,
+                        totalQuantity: cart.totalQuantity
+                    })
                 }
             );
 

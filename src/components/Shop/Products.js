@@ -6,21 +6,21 @@ const DUMMY_PRODUCTS = [
         id: 'p1',
         title: 'Atonement',
         writer: 'Ian McEwan',
-        price: 6,
+        price: 16.55,
         description: 'It tells the story of protagonist Briony Tallis crime and how it changes her life, as well as those of her sister Cecilia and her lover Rob.'
     },
     {
         id: 'p2',
         title: 'The Corrections',
         writer: 'Jonathan Franzen',
-        price: 5,
+        price: 13.95,
         description: 'The Corrections is a 2001 novel by American author Jonathan Franzen.'
     },
     {
         id: 'p3',
         title: 'The Road',
         writer: 'Cormac McCarthy',
-        price: 6.5,
+        price: 12,
         description: 'The book details the grueling journey of a father and his young son over a period of several months across a landscape blasted by an unspecified cataclysm that has destroyed industrial civilization and almost all life.'
     }
 ];
