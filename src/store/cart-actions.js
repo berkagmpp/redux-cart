@@ -17,7 +17,10 @@ export const fetchCartData = () => {
         
         try {
             const cartData = await fetchData();
-            dispatch(cartActions.replaceCart(cartData));    // pass cartData as a payload to replaceCart() of cartActions
+            dispatch(cartActions.replaceCart({      // pass cartData as a payload to replaceCart() of cartActions
+                items: cartData.items || [],    // prevent undefined when cart is empty
+                totalQuantity: cartData.totalQuantity
+            }));
 
         } catch(error) {
             dispatch(uiActions.showNotification({
